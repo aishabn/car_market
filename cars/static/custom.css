@@ -1,0 +1,16 @@
+body {
+	margin-bottom: 30px;
+	margin-top: 20px;}
+
+img {
+	height: 100%;
+	width: 900px;
+	display: block;
+    margin: 0 auto;
+}
+
+.frame {
+
+	border: 1 px;
+	width: 18rem;
+}

@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Car Detail</title>
-</head>
-<body>
-		<h1>
-			{{car.make}} - {{car.model}}
-			<small>
-				{{car.year}}
-			</small>
-		</h1>
-		<hr>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  	{% if car.car_img %}
+  <img class="card-img-top" src="{{car.car_img.url}}" alt="Car">
+    {% endif %}
+    <h1 class="display-4">{{car.make}} - {{car.model}}</h1>
+    <p class="lead">{{car.year}}</p>
+    <a href="{% url 'car-update' car.id %}" class="btn btn-info">Update</a>
+  <a href="{% url 'car-delete' car.id %}" class="btn btn-danger">Delete</a>
+  </div>
+</div>
+{% endblock content %}
+
+
