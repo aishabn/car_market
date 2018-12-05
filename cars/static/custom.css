@@ -7,10 +7,23 @@ img {
 	width: 900px;
 	display: block;
     margin: 0 auto;
+
 }
 
 .frame {
 
-	border: 1 px;
-	width: 18rem;
+	border: 20 px;
+    border-radius: 25px;
+    width: 19rem;
+
+    padding: 10px;
+    width: 350px;
+    height: 320px; 
+
 }
+ .detail {
+
+ 	margin-left: -10px;
+ 	display:block;
+ }
+

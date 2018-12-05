@@ -7,7 +7,7 @@
     {% endif %}
     <h1 class="display-4">{{car.make}} - {{car.model}}</h1>
     <p class="lead">{{car.year}}</p>
-    <a href="{% url 'car-update' car.id %}" class="btn btn-info">Update</a>
+    <a href="{% url 'car-update' car.id %}" class="btn btn-outline-info">Update</a>
   <a href="{% url 'car-delete' car.id %}" class="btn btn-danger">Delete</a>
   </div>
 </div>
